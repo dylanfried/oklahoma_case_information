@@ -46,8 +46,10 @@ for county in counties:
                 counts_data.append(count)
             # You can do something similar to extract the data for the other table here
             number += 1
-            if number >= 10:
-                break
+
+            # Uncomment this out to test with a small number
+            # if number >= 10:
+            #     break
 # Write to CSV files
 # Write counts CSV file
 with open('counts.csv', 'w') as csvfile:
